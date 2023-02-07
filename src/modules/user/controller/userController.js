@@ -64,7 +64,7 @@ module.exports = {
             console.log("result", result);
             if (result.length) {
               // user already exists
-              res.redirect("user/verifyEmail", {
+              res.render("user/signup", {
                 isFailed: true,
                 message: "user already existed",
               });
